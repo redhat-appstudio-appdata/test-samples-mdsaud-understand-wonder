@@ -3,7 +3,6 @@ bases:
 - components/java-quarkus-sample/base
 - components/java-springboot-sample/base
 - components/nodejs-sample/base
-- components/origin-hello-openshift/base
 kind: Kustomization
 resources:
 - common-storage-pvc.yaml
