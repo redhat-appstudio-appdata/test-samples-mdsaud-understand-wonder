@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: origin-hello-openshift
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: origin-hello-openshift
+    app.kubernetes.io/part-of: test-samples
+  name: origin-hello-openshift
+  namespace: mdsaud
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: origin-hello-openshift
+status:
+  loadBalancer: {}
